@@ -4,10 +4,6 @@ from collections import deque
 input = sys.stdin.readline
 
 F, S, G, U, D = map(int, input().strip().split()) 
-"""
-총 f층, 스타트링크는 G층, 현재위치 S층 
-U 위, D 아래
-"""
 
 is_visit = [0] * (F + 1)
 is_visit[S] = 1
